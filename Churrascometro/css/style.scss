@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+  background-color: #050505;
+
+  font-family: "Montserrat", "Inter", sans-serif;
+  color: white;
+}
+
+.nav {
+  max-width: 1080px;
+  margin: 50px auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 8px 20px;
+
+  border-radius: 110px;
+  border: 1px solid #3e3e3e;
+  background-color: rgba(24, 24, 24, 0.36);
+  backdrop-filter: blur(267.45001220703125px);
+}
+
+header {
+  max-width: 650px;
+  margin: 100px auto;
+
+  border-radius: 8px;
+  padding-bottom: 50px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+
+  border-radius: 10px;
+  border: 1px solid #3e3e3e;
+  background: rgba(44, 44, 44, 0.21);
+  backdrop-filter: blur(17.100000381469727px);
+}
+
+input {
+  width: 90%;
+  display: block;
+
+  padding: 12px;
+  margin-top: 10px;
+
+  background-color: transparent;
+  border: 1px solid #4e4e4e;
+  border-radius: 8px;
+
+  color: white;
+  font-family: "Montserrat";
+}
+button {
+  width: 90%;
+
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+
+  padding: 16px 30px;
+  margin-top: 10px;
+
+  background: #8c0000;
+  border: transparent;
+  border-radius: 8px;
+
+  animation: 3.4s infinite brilho;
+  background-image: linear-gradient(45deg, #d74b4b, #ff0000, #d74b4b, #ff0000);
+  background-size: 400% 200%;
+  transition: background 1.6s all;
+
+  &:hover {
+    color: #fff;
+    box-shadow: 0 0 15px 1px #ff0000;
+    scale: 1;
+    transition: all 0.7s;
+  }
+}
+
+@keyframes brilho {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+.ch {
+  width: 100%;
+  background-color: #f10606;
+  border-radius: 8px 8px 0px 0px;
+
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+
+  padding: 8px;
+}
+
+//========= Resultado do script =========//
+
+.resultado-info {
+  text-align: center;
+  margin-bottom: 10px;
+
+  color: #b1b1b1;
+}
+
+.h2-result {
+  text-align: center;
+  font-size: 25px;
+  color: white;
+
+  margin-top: 28px;
+}
+
+//====== Fundo ==========//
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100vh;
+
+  z-index: -2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("/images/back.1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 auto;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100vh;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+
+    background: linear-gradient(
+      99deg,
+      #000 -1.43%,
+      rgba(0, 0, 0, 0) 45.77%,
+      #000 89.66%
+    );
+  }
+}
+
+// ====== Loader =======//
+
+.bg-loader {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: 999;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #050505;
+}
+
+.bord {
+  fill: transparent;
+  animation: bord 12s ease infinite alternate;
+}
+
+@keyframes bord {
+  0% {
+    stroke-width: 0;
+    stroke-dasharray: 1 100;
+    fill: transparent;
+  }
+  25% {
+    stroke-width: 1;
+    stroke-dasharray: 100 0;
+    fill: transparent;
+  }
+  60%,
+  100% {
+    stroke-width: 0.3;
+    fill: #660000;
+  }
+}
+
+.foguin {
+  fill: transparent;
+  animation: bordin 8s ease infinite alternate;
+}
+
+@keyframes bordin {
+  0% {
+    stroke-width: 0;
+    stroke-dasharray: 2 100;
+    fill: transparent;
+  }
+  25% {
+    stroke-width: 0.7;
+    stroke-dasharray: 100 1;
+    fill: transparent;
+  }
+  60%,
+  100% {
+    stroke-width: 0.7;
+    fill: transparent;
+  }
+}

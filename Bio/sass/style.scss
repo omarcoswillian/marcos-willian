@@ -1,0 +1,194 @@
+@import "_colors";
+@import "_network";
+@import "_projects";
+@import "_portifolio";
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  font-family: "Montserrat";
+  letter-spacing: -0.02em;
+}
+
+html {
+  width: 100%;
+  overflow-x: hidden;
+
+  color: rgba(0, 0, 0, 0.7);
+  line-height: 140%;
+  background-color: $background;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding: 0rem 2rem;
+}
+
+.container-left {
+  width: 100%;
+  max-width: 550px;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  padding: 3rem 1rem;
+  position: sticky;
+  top: 0px;
+}
+
+.item1 {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+.img {
+  width: 160px;
+  margin-bottom: 30px;
+}
+
+h1 {
+  color: $black;
+}
+
+.txt1 {
+  color: $black;
+  font-weight: 600;
+}
+
+button {
+  background-color: $blue;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+}
+
+button > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 8px 14px;
+
+  color: $white;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: $blackOpacity;
+}
+
+/* --- Responsivo ---*/
+
+/* ---- Mobile ----*/
+@media screen and (max-width: 767px) {
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0rem 1rem;
+  }
+
+  .container-left {
+    width: 100%;
+    height: 440px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 12px;
+
+    padding: 2rem 0rem;
+    position: static;
+  }
+
+  .item1 {
+    gap: 10px;
+  }
+
+  .img {
+    width: 80px;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    color: $black;
+    font-size: 1.5em;
+  }
+
+  .txt01 {
+    font-size: 0.8em;
+    line-height: 130%;
+  }
+
+  .txt1 {
+    color: $black;
+    font-weight: 600;
+    font-size: 0.8em;
+  }
+
+  button > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+}
+
+/* --- Responsividade ---*/
+
+/* ---- Tablet ----*/
+/*
+@media (min-width: 768px) and (max-width: 1023px)
+*/
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header {
+    padding: 0rem 1rem;
+    gap: 8px;
+  }
+
+  .container-left {
+    width: 100%;
+    min-width: 40%;
+    padding: 2rem 0rem;
+  }
+
+  .item1 {
+    gap: 10px;
+  }
+
+  .img {
+    width: 70px;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    color: $black;
+    font-size: 1.5em;
+  }
+
+  .txt01 {
+    font-size: 0.8em;
+    line-height: 130%;
+  }
+
+  .txt1 {
+    color: $black;
+    font-weight: 600;
+    font-size: 0.8em;
+  }
+
+  button > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+}

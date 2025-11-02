@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Churrascometro</title>
+
+    <!--====== css ==========-->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!--====== fonts ==========-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Mukta:wght@300;400&family=Sora&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--====== script ==========-->
+    <script src="JS/svg-inject.min.js"></script>
+  </head>
+  <body>
+    <!--====== loading ==========-->
+    <section class="bg-loader">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="341"
+        height="418"
+        viewBox="0 0 341 418"
+        fill="none"
+      >
+        <path
+          class="bord"
+          d="M34.6503 175.28C-45.8286 315.4 62.1952 388.154 126.267 407.016C75.9669 377.555 78.962 332.465 86.747 313.603C111.897 340.19 147.525 342.046 162.196 339.651C140.639 293.663 160.998 249.831 173.873 233.663C263.693 296.897 245.429 375.579 225.07 407.016C371.657 353.124 340.639 233.663 306.807 180.669C308.962 205.1 288.543 230.968 278.064 240.849C280.938 180.49 248.723 143.843 232.256 133.064C179.082 96.4177 171.178 39.9508 173.873 16.2981C84.771 113.304 84.0524 206.418 94.8308 240.849C60.3398 235.819 40.3393 195.04 34.6503 175.28Z"
+          fill="#A70000"
+          stroke="#C00B0B"
+          stroke-width="10.7784"
+        />
+      </svg>
+    </section>
+
+    <!--====== Manu ==========-->
+    <nav class="nav">
+      <!-- 
+      <div class="logo">
+        <img src="./svg/logo.svg" onload="SVGInject(this)" />
+      </div> 
+      -->
+      <div class="fogo">
+        <img src="./svg/Foguinho.svg" onload="SVGInject(this)" />
+      </div>
+      <div class="social">
+        <a href="https://www.instagram.com/omarcoswillian_/"
+          ><img src="./svg/Instagram.svg" onload="SVGInject(this)"
+        /></a>
+        <a href="https://www.instagram.com/omarcoswillian_/"
+          ><img src="./svg/Twitter.svg" onload="SVGInject(this)"
+        /></a>
+      </div>
+    </nav>
+
+    <!--====== Header ==========-->
+    <header>
+      <div class="ch"><h1>Churrascômetro</h1></div>
+      <input id="adultos" name="adultos" type="number" placeholder="Adultos" />
+      <input id="crianca" name="crianca" type="number" placeholder="Crianças" />
+      <input id="duracao" name="duracao" type="number" placeholder="Duração" />
+      <button onclick="calcular()">Calcular a quantidade</button>
+
+      <div id="resultado"></div>
+    </header>
+
+    <!--====== BG-fundo ==========-->
+
+    <section class="back"></section>
+
+    <script src="./JS/app.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+      integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>

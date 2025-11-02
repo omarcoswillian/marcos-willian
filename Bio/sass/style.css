@@ -1,0 +1,472 @@
+.container-right {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 3rem 1rem;
+}
+
+.network {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.network-items1 {
+  width: 100%;
+  max-width: 45%;
+  height: 380px;
+  border-radius: 20px;
+  background: #110e1b;
+  box-shadow: 4px 4px 20px 0 rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+}
+
+.network-items2 {
+  width: 100%;
+  max-width: 53%;
+  height: 380px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.network-items3 {
+  width: 100%;
+  max-width: 97%;
+  height: 48%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 4px 4px 20px 0 rgba(0, 0, 0, 0.04);
+  padding: 40px 25px;
+}
+
+.network-items4 {
+  width: 100%;
+  max-width: 47%;
+  height: 48%;
+  display: flex;
+  align-items: center;
+  padding: 40px 25px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 4px 4px 20px 0 rgba(0, 0, 0, 0.04);
+}
+
+.next-left > img {
+  width: 40px;
+  border-radius: 8px;
+}
+
+.next-left > h3 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.next-left > p {
+  font-size: 12px;
+}
+
+.divBanner {
+  width: 220px;
+  height: 120px;
+  border-radius: 12px;
+  background-image: url("../img/bannerTask.png");
+  background-size: cover;
+  background-position: center;
+}
+
+/* --- Responsividade ---*/
+/* ---- Mobile ----*/
+@media screen and (max-width: 767px) {
+  .container-right {
+    width: 100%;
+    padding: 1rem 0rem;
+  }
+  .network {
+    width: 100%;
+    gap: 12px;
+  }
+  .network-items1 {
+    width: 100%;
+    min-width: 100%;
+    height: 180px;
+    border-radius: 12px;
+  }
+  .network-items2 {
+    width: 100%;
+    max-width: 420px;
+    height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .network-items3 {
+    width: 100%;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 4px 4px 20px 0 rgba(0, 0, 0, 0.04);
+    padding: 20px 15px;
+  }
+  .divBanner {
+    width: 170px;
+    height: 98px;
+    border-radius: 12px;
+    background-image: url("../img/bannerTask.png");
+    background-size: cover;
+    background-position: center;
+  }
+  .network-items4 {
+    width: 48%;
+    max-width: 220px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    padding: 20px 15px;
+    border-radius: 12px;
+  }
+}
+/* --- Responsividade ---*/
+/* ---- Tablet ----*/
+/*
+@media (min-width: 768px) and (max-width: 1023px)
+*/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container-right {
+    width: 100%;
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 3rem 1rem;
+  }
+  .container-right {
+    width: 100%;
+    padding: 1rem 0rem;
+  }
+  .network-items1 {
+    width: 100%;
+    min-width: 100%;
+    height: 240px;
+    border-radius: 12px;
+  }
+  .network-items2 {
+    width: 100%;
+    max-width: 420px;
+    height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .divBanner {
+    width: 160px;
+    height: 90px;
+    border-radius: 12px;
+    background-image: url("../img/bannerTask.png");
+    background-size: cover;
+    background-position: center;
+  }
+}
+h3 {
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.cont-projetos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.projeto1 {
+  width: 100%;
+  max-width: 48%;
+  height: 350px;
+  background-image: url("../img/luana.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  position: relative;
+}
+
+.projeto2 {
+  width: 100%;
+  max-width: 48%;
+  height: 350px;
+  background-image: url("../img/formagios.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  position: relative;
+}
+
+.projeto3 {
+  width: 100%;
+  max-width: 48%;
+  height: 350px;
+  background-image: url("../img/peacework.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  position: relative;
+}
+
+.projeto4 {
+  width: 100%;
+  max-width: 48%;
+  height: 350px;
+  background-image: url("../img/evo.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  position: relative;
+}
+
+.projeto1 > p {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 18px;
+  border-radius: 6px;
+  border: 0.8px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.24);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  letter-spacing: 0px;
+}
+
+.projeto1 > img {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/* --- Responsividade ---*/
+/* ---- Mobile ----*/
+@media screen and (max-width: 767px) {
+  .projeto1 {
+    width: 100%;
+    min-width: 100%;
+    height: 280px;
+    position: relative;
+  }
+}
+/* --- Responsividade ---*/
+/* ---- Tablet ----*/
+/*
+@media (min-width: 768px) and (max-width: 1023px)
+*/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .projeto1 {
+    width: 100%;
+    min-width: 100%;
+    height: 280px;
+    position: relative;
+  }
+}
+.portifolio1 {
+  width: 100%;
+  max-width: 48%;
+  height: 350px;
+  background-image: url("../img/spidermen.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  position: relative;
+}
+
+.portifolio2 {
+  width: 100%;
+  max-width: 48%;
+  height: 350px;
+  background-image: url("../img/churrascometro.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  position: relative;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+  letter-spacing: -0.02em;
+}
+
+html {
+  width: 100%;
+  overflow-x: hidden;
+  color: rgba(0, 0, 0, 0.7);
+  line-height: 140%;
+  background-color: #f4f4f4;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0rem 2rem;
+}
+
+.container-left {
+  width: 100%;
+  max-width: 550px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 3rem 1rem;
+  position: sticky;
+  top: 0px;
+}
+
+.item1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.img {
+  width: 160px;
+  margin-bottom: 30px;
+}
+
+h1 {
+  color: #000;
+}
+
+.txt1 {
+  color: #000;
+  font-weight: 600;
+}
+
+button {
+  background-color: #098be7;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+}
+
+button > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 8px 14px;
+  color: #fff;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/* --- Responsivo ---*/
+/* ---- Mobile ----*/
+@media screen and (max-width: 767px) {
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0rem 1rem;
+  }
+  .container-left {
+    width: 100%;
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 2rem 0rem;
+    position: static;
+  }
+  .item1 {
+    gap: 10px;
+  }
+  .img {
+    width: 80px;
+    margin-bottom: 10px;
+  }
+  h1 {
+    color: #000;
+    font-size: 1.5em;
+  }
+  .txt01 {
+    font-size: 0.8em;
+    line-height: 130%;
+  }
+  .txt1 {
+    color: #000;
+    font-weight: 600;
+    font-size: 0.8em;
+  }
+  button > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+}
+/* --- Responsividade ---*/
+/* ---- Tablet ----*/
+/*
+@media (min-width: 768px) and (max-width: 1023px)
+*/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header {
+    padding: 0rem 1rem;
+    gap: 8px;
+  }
+  .container-left {
+    width: 100%;
+    min-width: 40%;
+    padding: 2rem 0rem;
+  }
+  .item1 {
+    gap: 10px;
+  }
+  .img {
+    width: 70px;
+    margin-bottom: 10px;
+  }
+  h1 {
+    color: #000;
+    font-size: 1.5em;
+  }
+  .txt01 {
+    font-size: 0.8em;
+    line-height: 130%;
+  }
+  .txt1 {
+    color: #000;
+    font-weight: 600;
+    font-size: 0.8em;
+  }
+  button > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=style.css.map */

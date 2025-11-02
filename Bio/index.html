@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marcos Willian</title>
+
+    <!-- -->
+    <!--====== favIcon ======-->
+    <link rel="shortcut icon" href="./svg/favicon2.svg" type="image/x-icon" />
+
+    <!--====== css ========-->
+    <link rel="stylesheet" href="./sass/style.css" />
+
+    <!--====== Fonte Montserrat ======-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--====== Header ========-->
+    <header class="header">
+      <!--====== Container da Apresentação ========-->
+      <div class="container-left">
+        <div class="item1">
+          <img class="img" src="./img/especialista.png" alt="Marcos Willian" />
+          <h1>Marcos Willian</h1>
+          <p class="txt01">
+            Movido pela paixão pela eficiência e foco no usuário. Atualmente,
+            sou Líder de Desenvolvimento Web da Task Enterprise.
+            <br /><br />
+            Sempre disposto a me conectar com pessoas criativas 👋
+          </p>
+          <p class="txt1">
+            👨🏻‍💻 Desenvolvedor Front-end da Task Enterprise<br />
+            🌁 Com sede em Valinhos, SP
+
+            <br /><br />
+            🇧🇷 🇧🇷
+          </p>
+        </div>
+
+        <button>
+          <a
+            href="https://wa.me/5519994157979?text=Olá%20Marcos,%20quero%20falar%20com%20você!"
+            >Entre em contato</a
+          >
+        </button>
+      </div>
+      <!--====== Container de Projetos, Network e Portifólio ========-->
+      <div class="container-right">
+        <div class="network">
+          <div class="network-items1" id="lottie-animation"></div>
+          <div class="network-items2">
+            <a href="https://taskenterprise.com.br/" class="network-items3">
+              <div class="next-left">
+                <img src="./svg/task.svg" alt="icone task" />
+                <h3 class="title-task">Task Enterprise</h3>
+                <p class="txt-task">taskenterprise.com.br</p>
+              </div>
+              <div class="divBanner"></div>
+            </a>
+            <a
+              href="https://www.instagram.com/omarcoswillian_/"
+              class="network-items4"
+            >
+              <div class="next-left">
+                <img src="./img/insta.png" alt="icone task" />
+                <h3 class="title-task">Instagram</h3>
+                <p class="txt-task">omarcoswillian_</p>
+              </div>
+            </a>
+            <a href="https://github.com/omarcoswillian" class="network-items4">
+              <div class="next-left">
+                <img src="./svg/git.svg" alt="icone task" />
+                <h3 class="title-task">Github</h3>
+                <p class="txt-task">omarcoswillian</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!--====== Projetos ======-->
+        <div class="projetos">
+          <h3>Projetos 🧪</h3>
+          <div class="cont-projetos">
+            <!-- projeto Luana-->
+            <a href="https://www.luanacarolinas.com.br/bio" class="projeto1">
+              <img src="./svg/arrow-up-right.svg" alt="seta" />
+              <p>Luana Carolina</p>
+            </a>
+
+            <!-- projeto Os formágio-->
+            <a
+              href="https://blackboutique.us/black-boutique-a2/"
+              class="projeto1 projeto2"
+            >
+              <img src="./svg/arrow-up-right.svg" alt="seta" />
+              <p>Os formágios</p>
+            </a>
+
+            <!-- projeto Peacework-->
+            <a href="https://www.peacework.com.br/" class="projeto1 projeto3">
+              <img src="./svg/arrow-up-right.svg" alt="seta" />
+              <p>Peacework</p>
+            </a>
+
+            <!-- projeto Evo-->
+            <a href="https://useevo.store/" class="projeto1 projeto4">
+              <img src="./svg/arrow-up-right.svg" alt="seta" />
+              <p>evo</p>
+            </a>
+          </div>
+        </div>
+        <!--====== Portifólios ======-->
+        <div class="projetos">
+          <h3>Portifólio 🧪</h3>
+          <div class="cont-projetos">
+            <!-- Portifólios Spider-men-->
+            <a href="#" class="projeto1 portifolio1">
+              <img src="./svg/arrow-up-right.svg" alt="seta" />
+              <p>Spider men</p>
+            </a>
+
+            <!-- Portifólios Churrascometro-->
+            <a href="#" class="projeto1 portifolio2">
+              <img src="./svg/arrow-up-right.svg" alt="seta" />
+              <p>Churrascomêtro</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--====== Script do map.json ========-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+    <script>
+      // Carrega a animação
+      var animation = lottie.loadAnimation({
+        container: document.getElementById("lottie-animation"), // elemento onde vai aparecer
+        renderer: "svg", // tipo de renderização
+        loop: true, // se vai ficar repetindo
+        autoplay: true, // se começa automaticamente
+        path: "map.json", // caminho do arquivo JSON baixado
+      });
+    </script>
+  </body>
+</html>
